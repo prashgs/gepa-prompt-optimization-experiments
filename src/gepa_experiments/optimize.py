@@ -138,23 +138,30 @@ class CrewAIBRGAdapter(GEPAAdapter[dict[str, Any], dict[str, Any], dict[str, Any
                 f"batch_size={len(batch)}, capture_traces={capture_traces}, label={label}"
             )
             self.run.file_block(f"eval #{batch_id} prompt", prompt, max_chars=8000)
-            kind = style.magenta("MUTATED") if label.startswith("mutated") else style.green("SEED/BASELINE")
+            source = "seed" if label == "seed" else "gepa"
             self.run.cli(
-                f"{style.blue('▸')} eval {style.bold(f'#{batch_id}')}  "
-                f"{kind} {style.bold(label)}  "
-                f"n={len(batch)}"
+                f"{style.blue('▸')} {style.bold(label)}  "
+                + style.dim(f"source={source}")
             )
-            self.run.cli(f"  {self._models_line()}")
+            self.run.cli(
+                f"  {style.dim('models')}  "
+                f"generator={style.bold(self.task_model)}"
+                + (
+                    f"  judge={style.bold(self.cfg.models.judge)}"
+                    if self.cfg.gepa.use_judge
+                    else ""
+                )
+            )
             if is_new:
                 title = (
-                    "Seed / baseline prompt"
+                    f"{label} prompt (seed / baseline)"
                     if label == "seed"
-                    else f"Mutated prompt ({label})"
+                    else f"{label} prompt (GEPA-mutated)"
                 )
                 self.run.cli_block(title, prompt)
                 if self.cfg.gepa.use_judge:
                     self.run.cli(
-                        f"  {style.yellow('⚖')} judging outputs of this prompt with "
+                        f"  {style.yellow('⚖')} judging generator outputs for this prompt with "
                         f"{style.bold(self.cfg.models.judge)}"
                     )
 
@@ -180,7 +187,7 @@ class CrewAIBRGAdapter(GEPAAdapter[dict[str, Any], dict[str, Any], dict[str, Any
                     f"  {style.cyan('→')} {style.bold(str(example_id))}  "
                     f"{i + 1}/{len(batch)}  "
                     + style.dim(
-                        f"prompt={label}  task={self.task_model}"
+                        f"models generator={self.task_model}"
                         + (
                             f"  judge={self.cfg.models.judge}"
                             if self.cfg.gepa.use_judge
@@ -217,15 +224,13 @@ class CrewAIBRGAdapter(GEPAAdapter[dict[str, Any], dict[str, Any], dict[str, Any
                     f"[eval #{batch_id}] id={example_id} score={score:.4f} "
                     f"output_chars={len(generated)} feedback={feedback}"
                 )
-                self.run.cli(
-                    f"  {style.bold(str(example_id))}  "
-                    f"gepa_score={style.score(score)}  "
-                    f"checklist={style.score(float(detail.get('checklist', 0.0)))}"
-                )
+                checklist_val = float(detail.get("checklist", 0.0))
                 judge = detail.get("judge") or {}
                 if judge:
                     self.run.cli(
-                        f"    judge_overall={style.score(float(judge.get('overall', 0.0)))}"
+                        f"  {style.bold(str(example_id))}  "
+                        f"checklist={style.score(checklist_val)}  "
+                        f"overall={style.score(float(judge.get('overall', 0.0)))}"
                     )
                     mid = (len(JUDGE_DIMENSIONS) + 1) // 2
                     self.run.cli(
@@ -242,14 +247,29 @@ class CrewAIBRGAdapter(GEPAAdapter[dict[str, Any], dict[str, Any], dict[str, Any
                             for k in JUDGE_DIMENSIONS[mid:]
                         )
                     )
+                    self.run.cli(
+                        f"    {style.dim('checklist feedback:')} "
+                        f"{detail.get('checklist_feedback', feedback)}"
+                    )
                     if detail.get("rationale"):
                         self.run.cli(
                             f"    {style.dim('judge rationale:')} {detail['rationale']}"
                         )
-                self.run.cli(
-                    f"    {style.dim('checklist feedback:')} "
-                    f"{detail.get('checklist_feedback', feedback)}"
-                )
+                    elif float(judge.get("overall", 0.0)) == 0.0:
+                        raw = str(detail.get("judge_raw_preview") or "")
+                        self.run.cli(
+                            f"    {style.red('judge parse/empty response — raw:')} "
+                            f"{style.dim(raw[:300])}"
+                        )
+                else:
+                    self.run.cli(
+                        f"  {style.bold(str(example_id))}  "
+                        f"checklist={style.score(checklist_val)}"
+                    )
+                    self.run.cli(
+                        f"    {style.dim('checklist feedback:')} "
+                        f"{detail.get('checklist_feedback', feedback)}"
+                    )
                 self.run.append_score_row(
                     {
                         "batch": batch_id,
@@ -282,7 +302,7 @@ class CrewAIBRGAdapter(GEPAAdapter[dict[str, Any], dict[str, Any], dict[str, Any
                 f"(min={min(scores):.4f}, max={max(scores):.4f})"
             )
             self.run.cli(
-                f"  {style.bold('metrics')}  prompt={label}  "
+                f"{style.green('✓')} {style.bold(label)} metrics  "
                 f"mean={style.score(mean)}  "
                 f"min={style.score(min(scores))}  max={style.score(max(scores))}  "
                 f"n={len(scores)}"
@@ -429,13 +449,6 @@ def run_optimization(
             else ""
         )
     )
-    run.cli_block("Seed / baseline prompt", seed_backstory)
-    if cfg.gepa.use_judge:
-        run.cli(
-            f"  {style.yellow('⚖')} seed/baseline and mutated prompts will be judged by "
-            f"{style.bold(cfg.models.judge)}"
-        )
-
     adapter = CrewAIBRGAdapter(
         cfg,
         task_model=task_model,

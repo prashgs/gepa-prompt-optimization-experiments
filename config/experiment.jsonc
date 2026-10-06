@@ -5,11 +5,11 @@
   // Model tags (CLI overrides: --task-model, --reflection-model, --judge-model, --small-model, --large-model)
   // GEPA optimizes small and large separately; each uses its reflection_* LM for prompt mutation.
   "models": {
-    "small": "gemma4:e4b",
+    "small": "qwen3.5:4b",
     "large": "qwen3.5:9b",
     "task": "qwen3.5:4b",
     "reflection": "qwen3.5:4b",
-    "reflection_small": "gemma4:e4b",
+    "reflection_small": "qwen3.5:4b",
     "reflection_large": "qwen3.5:9b",
     "judge": "gemma4:12b"
   },

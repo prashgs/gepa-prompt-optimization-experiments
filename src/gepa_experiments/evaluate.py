@@ -134,9 +134,8 @@ def _ensure_gepa_prompts(
 
     if need_small and _load_optimized_prompt(cfg, cfg.models.small) is None:
         print(
-            f"{style.cyan('●')} GEPA optimize (missing gepa_small)  "
-            f"task={style.bold(cfg.models.small)}  "
-            f"reflect={style.bold(cfg.reflection_for('small'))}"
+            f"  {style.yellow('⚠')} {style.bold('gepa_small')}  "
+            f"{style.dim(f'no optimized prompt for {cfg.models.small} — optimizing now')}"
         )
         out = run_optimization(
             cfg,
@@ -154,9 +153,8 @@ def _ensure_gepa_prompts(
 
     if need_large and _load_optimized_prompt(cfg, cfg.models.large) is None:
         print(
-            f"{style.cyan('●')} GEPA optimize (missing gepa_large)  "
-            f"task={style.bold(cfg.models.large)}  "
-            f"reflect={style.bold(cfg.reflection_for('large'))}"
+            f"  {style.yellow('⚠')} {style.bold('gepa_large')}  "
+            f"{style.dim(f'no optimized prompt for {cfg.models.large} — optimizing now')}"
         )
         out = run_optimization(
             cfg,
