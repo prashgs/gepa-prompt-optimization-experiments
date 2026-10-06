@@ -192,10 +192,6 @@ def evaluate_arms(
         cfg, wanted=wanted, optimize_missing=optimize_missing
     )
 
-    outputs_root = cfg.outputs_dir()
-    outputs_root.mkdir(parents=True, exist_ok=True)
-    run = create_evaluate_run(outputs_root)
-
     specs, skipped_gepa = _arm_specs(cfg)
     if wanted is not None:
         specs = [s for s in specs if s["arm"] in wanted]
@@ -203,7 +199,9 @@ def evaluate_arms(
 
     # gepa_small is required for the experiment hypotheses unless explicitly omitted
     missing_required = [
-        s for s in skipped_gepa if s["arm"] == "gepa_small" and (wanted is None or "gepa_small" in wanted)
+        s
+        for s in skipped_gepa
+        if s["arm"] == "gepa_small" and (wanted is None or "gepa_small" in wanted)
     ]
     if missing_required:
         reason = missing_required[0]["reason"]
@@ -211,6 +209,10 @@ def evaluate_arms(
             f"Cannot evaluate hypotheses without gepa_small: {reason}. "
             "Re-run without --no-optimize-missing, or run gepa-optimize --model small first."
         )
+
+    outputs_root = cfg.outputs_dir()
+    outputs_root.mkdir(parents=True, exist_ok=True)
+    run = create_evaluate_run(outputs_root)
 
     run.write_json(
         "meta.json",
