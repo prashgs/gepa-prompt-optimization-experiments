@@ -1,0 +1,19 @@
+{
+  "name": "BRG Judge Crew",
+  "agents": ["quality_judge"],
+  "tasks": [
+    {
+      "name": "score_requirements",
+      "description": "Score the candidate requirements against the stakeholder brief and optional gold reference.\n\nStakeholder brief:\n{brief}\n\nGold reference (for coverage hints; do not require verbatim match):\n{gold_requirements}\n\nCandidate requirements to score:\n{candidate_output}\n\nRubric dimensions (each 0.0–1.0):\n- correctness: requirements are accurate vs the brief (no invented capabilities that contradict it)\n- completeness: covers the main needs in the brief\n- clarity: unambiguous, well-organized wording\n- testability: acceptance criteria are measurable/verifiable\n- specificity: concrete actors, actions, constraints (not vague)\n- grounding: claims are grounded in the brief/gold (not hallucinated extras presented as required)\n- relevance: content stays on-topic for the brief (no unrelated requirements)\n- structural: clear sections (user stories, functional, NFR, acceptance criteria)\n\nReturn ONLY a JSON object with this shape:\n{\"correctness\":0.0,\"completeness\":0.0,\"clarity\":0.0,\"testability\":0.0,\"specificity\":0.0,\"grounding\":0.0,\"relevance\":0.0,\"structural\":0.0,\"overall\":0.0,\"rationale\":\"brief explanation\"}\nSet overall to the arithmetic mean of the eight dimension scores (exclude overall itself).",
+      "expected_output": "A single JSON object with correctness, completeness, clarity, testability, specificity, grounding, relevance, structural, overall (floats 0-1), and rationale (string).",
+      "agent": "quality_judge"
+    }
+  ],
+  "process": "sequential",
+  "verbose": false,
+  "inputs": {
+    "brief": "",
+    "gold_requirements": "",
+    "candidate_output": ""
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "BRG Generator Crew",
+  "agents": ["requirements_analyst"],
+  "tasks": [
+    {
+      "name": "generate_requirements",
+      "description": "Analyze the following stakeholder brief and produce structured business requirements.\n\nStakeholder brief:\n{brief}\n\nCover user stories, functional requirements, non-functional requirements, and measurable acceptance criteria.",
+      "expected_output": "A structured requirements document with sections: User Stories, Functional Requirements, Non-Functional Requirements, and Acceptance Criteria. Each acceptance criterion must be testable.",
+      "agent": "requirements_analyst"
+    }
+  ],
+  "process": "sequential",
+  "verbose": false,
+  "inputs": {
+    "brief": ""
+  }
+}

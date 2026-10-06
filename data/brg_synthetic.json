@@ -1,0 +1,314 @@
+[
+  {
+    "id": "brg_01",
+    "brief": "Build an employee leave request portal where staff submit PTO, managers approve or reject, and HR sees a calendar of approved leave. Integrate with our existing Okta SSO.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: leave request submission, manager approval, HR calendar view, Okta SSO, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Build an employee leave request portal where staff submit PTO, managers approve or reject, and HR sees a calendar of approved leave. Integrate with our existing Okta SSO.\n- The system shall cover checklist topics: leave request submission, manager approval, HR calendar view, Okta SSO, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'leave request submission', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'manager approval', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'HR calendar view', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'Okta SSO', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "leave request submission",
+      "manager approval",
+      "HR calendar view",
+      "Okta SSO",
+      "acceptance criteria"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "brg_02",
+    "brief": "We need a customer support ticket system. Customers open tickets by email or web form. Agents triage by priority and SLA. Supervisors need dashboards for open, breached, and resolved tickets.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: ticket intake email web, priority triage, SLA tracking, supervisor dashboard, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: We need a customer support ticket system. Customers open tickets by email or web form. Agents triage by priority and SLA. Supervisors need dashboards for open, breached, and resolved tickets.\n- The system shall cover checklist topics: ticket intake email web, priority triage, SLA tracking, supervisor dashboard, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'ticket intake email web', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'priority triage', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'SLA tracking', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'supervisor dashboard', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "ticket intake email web",
+      "priority triage",
+      "SLA tracking",
+      "supervisor dashboard",
+      "acceptance criteria"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "brg_03",
+    "brief": "Create a vendor onboarding workflow: collect W-9, insurance certificates, and bank details; compliance reviews documents; finance activates payment profiles in NetSuite.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: document collection, compliance review, NetSuite payment profile, workflow statuses, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Create a vendor onboarding workflow: collect W-9, insurance certificates, and bank details; compliance reviews documents; finance activates payment profiles in NetSuite.\n- The system shall cover checklist topics: document collection, compliance review, NetSuite payment profile, workflow statuses, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'document collection', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'compliance review', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'NetSuite payment profile', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'workflow statuses', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "document collection",
+      "compliance review",
+      "NetSuite payment profile",
+      "workflow statuses",
+      "acceptance criteria"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "brg_04",
+    "brief": "Add a self-service password reset for internal apps. Users verify identity via MFA, set a new password meeting complexity rules, and get an audit log entry for security.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: MFA verification, password complexity, audit logging, self-service flow, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Add a self-service password reset for internal apps. Users verify identity via MFA, set a new password meeting complexity rules, and get an audit log entry for security.\n- The system shall cover checklist topics: MFA verification, password complexity, audit logging, self-service flow, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'MFA verification', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'password complexity', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'audit logging', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'self-service flow', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "MFA verification",
+      "password complexity",
+      "audit logging",
+      "self-service flow",
+      "acceptance criteria"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "brg_05",
+    "brief": "Build a product inventory sync between our Shopify storefront and the warehouse WMS. Stock levels must update within 5 minutes of a change. Handle SKU mismatches with an exception queue.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: Shopify WMS sync, 5 minute freshness, SKU mismatch exceptions, stock level updates, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Build a product inventory sync between our Shopify storefront and the warehouse WMS. Stock levels must update within 5 minutes of a change. Handle SKU mismatches with an exception queue.\n- The system shall cover checklist topics: Shopify WMS sync, 5 minute freshness, SKU mismatch exceptions, stock level updates, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'Shopify WMS sync', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising '5 minute freshness', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'SKU mismatch exceptions', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'stock level updates', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "Shopify WMS sync",
+      "5 minute freshness",
+      "SKU mismatch exceptions",
+      "stock level updates",
+      "acceptance criteria"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "brg_06",
+    "brief": "We want a meeting room booking app for HQ. Employees reserve rooms by time slot, see capacity and AV equipment, and get Outlook calendar invites. Admins can block rooms for maintenance.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: room reservation, capacity AV info, Outlook invites, admin maintenance blocks, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: We want a meeting room booking app for HQ. Employees reserve rooms by time slot, see capacity and AV equipment, and get Outlook calendar invites. Admins can block rooms for maintenance.\n- The system shall cover checklist topics: room reservation, capacity AV info, Outlook invites, admin maintenance blocks, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'room reservation', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'capacity AV info', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'Outlook invites', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'admin maintenance blocks', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "room reservation",
+      "capacity AV info",
+      "Outlook invites",
+      "admin maintenance blocks",
+      "acceptance criteria"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "brg_07",
+    "brief": "Implement expense report submission for field sales. Users upload receipts, categorize spend, managers approve under policy limits, and finance exports to Concur nightly.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: receipt upload, categorization, manager approval policy, Concur export, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Implement expense report submission for field sales. Users upload receipts, categorize spend, managers approve under policy limits, and finance exports to Concur nightly.\n- The system shall cover checklist topics: receipt upload, categorization, manager approval policy, Concur export, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'receipt upload', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'categorization', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'manager approval policy', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'Concur export', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "receipt upload",
+      "categorization",
+      "manager approval policy",
+      "Concur export",
+      "acceptance criteria"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "brg_08",
+    "brief": "Create a patient appointment scheduling module for a clinic. Patients pick providers and slots online, receive SMS reminders 24h before, and staff can reschedule with conflict detection.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: online scheduling, SMS reminders, reschedule conflict detection, provider slots, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Create a patient appointment scheduling module for a clinic. Patients pick providers and slots online, receive SMS reminders 24h before, and staff can reschedule with conflict detection.\n- The system shall cover checklist topics: online scheduling, SMS reminders, reschedule conflict detection, provider slots, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'online scheduling', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'SMS reminders', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'reschedule conflict detection', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'provider slots', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "online scheduling",
+      "SMS reminders",
+      "reschedule conflict detection",
+      "provider slots",
+      "acceptance criteria"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "brg_09",
+    "brief": "Add multi-currency checkout to our B2B portal. Show prices in USD, EUR, and GBP using daily FX rates from ECB. Invoices must store both local and USD amounts.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: multi-currency display, ECB FX rates, invoice dual amounts, checkout, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Add multi-currency checkout to our B2B portal. Show prices in USD, EUR, and GBP using daily FX rates from ECB. Invoices must store both local and USD amounts.\n- The system shall cover checklist topics: multi-currency display, ECB FX rates, invoice dual amounts, checkout, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'multi-currency display', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'ECB FX rates', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'invoice dual amounts', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'checkout', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "multi-currency display",
+      "ECB FX rates",
+      "invoice dual amounts",
+      "checkout",
+      "acceptance criteria"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "brg_10",
+    "brief": "Build a document retention policy engine. Classify uploaded files by type, apply retention periods, notify owners 30 days before purge, and support legal hold overrides.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: document classification, retention periods, purge notifications, legal hold, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Build a document retention policy engine. Classify uploaded files by type, apply retention periods, notify owners 30 days before purge, and support legal hold overrides.\n- The system shall cover checklist topics: document classification, retention periods, purge notifications, legal hold, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'document classification', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'retention periods', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'purge notifications', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'legal hold', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "document classification",
+      "retention periods",
+      "purge notifications",
+      "legal hold",
+      "acceptance criteria"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "brg_11",
+    "brief": "We need an API rate-limiting gateway for partner integrations. Default 1000 req/min per API key, burst to 2000, return 429 with Retry-After, and expose usage metrics in a partner portal.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: rate limits per API key, 429 Retry-After, burst handling, usage metrics portal, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: We need an API rate-limiting gateway for partner integrations. Default 1000 req/min per API key, burst to 2000, return 429 with Retry-After, and expose usage metrics in a partner portal.\n- The system shall cover checklist topics: rate limits per API key, 429 Retry-After, burst handling, usage metrics portal, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'rate limits per API key', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising '429 Retry-After', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'burst handling', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'usage metrics portal', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "rate limits per API key",
+      "429 Retry-After",
+      "burst handling",
+      "usage metrics portal",
+      "acceptance criteria"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "brg_12",
+    "brief": "Create an onboarding checklist app for new hires. HR assigns role-based tasks, managers mark completion, IT provisions accounts, and day-1 readiness is tracked on a dashboard.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: role-based tasks, manager completion, IT provisioning, readiness dashboard, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Create an onboarding checklist app for new hires. HR assigns role-based tasks, managers mark completion, IT provisions accounts, and day-1 readiness is tracked on a dashboard.\n- The system shall cover checklist topics: role-based tasks, manager completion, IT provisioning, readiness dashboard, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'role-based tasks', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'manager completion', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'IT provisioning', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'readiness dashboard', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "role-based tasks",
+      "manager completion",
+      "IT provisioning",
+      "readiness dashboard",
+      "acceptance criteria"
+    ],
+    "split": "train"
+  },
+  {
+    "id": "brg_13",
+    "brief": "Add subscription pause/resume for our SaaS. Customers pause for 1\u20133 months, billing stops, data retained, and resume restores prior plan. Support agents can override pause length.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: pause resume subscription, billing stop, data retention, agent override, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Add subscription pause/resume for our SaaS. Customers pause for 1\u20133 months, billing stops, data retained, and resume restores prior plan. Support agents can override pause length.\n- The system shall cover checklist topics: pause resume subscription, billing stop, data retention, agent override, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'pause resume subscription', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'billing stop', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'data retention', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'agent override', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "pause resume subscription",
+      "billing stop",
+      "data retention",
+      "agent override",
+      "acceptance criteria"
+    ],
+    "split": "val"
+  },
+  {
+    "id": "brg_14",
+    "brief": "Build a warehouse pick-path optimizer. Given an order batch, suggest aisle sequence to minimize walk distance, support handheld barcode confirmation, and flag short-picks.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: pick path optimization, barcode confirmation, short-pick flags, order batching, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Build a warehouse pick-path optimizer. Given an order batch, suggest aisle sequence to minimize walk distance, support handheld barcode confirmation, and flag short-picks.\n- The system shall cover checklist topics: pick path optimization, barcode confirmation, short-pick flags, order batching, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'pick path optimization', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'barcode confirmation', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'short-pick flags', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'order batching', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "pick path optimization",
+      "barcode confirmation",
+      "short-pick flags",
+      "order batching",
+      "acceptance criteria"
+    ],
+    "split": "val"
+  },
+  {
+    "id": "brg_15",
+    "brief": "Implement GDPR data-subject request handling. Track access, erasure, and portability requests with 30-day SLA, identity verification, and export packages in JSON.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: DSR types, 30-day SLA, identity verification, JSON export, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Implement GDPR data-subject request handling. Track access, erasure, and portability requests with 30-day SLA, identity verification, and export packages in JSON.\n- The system shall cover checklist topics: DSR types, 30-day SLA, identity verification, JSON export, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'DSR types', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising '30-day SLA', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'identity verification', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'JSON export', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "DSR types",
+      "30-day SLA",
+      "identity verification",
+      "JSON export",
+      "acceptance criteria"
+    ],
+    "split": "val"
+  },
+  {
+    "id": "brg_16",
+    "brief": "Create a feature-flag service for mobile apps. Product can target by % rollout, user cohort, and app version. Clients poll every 5 minutes; audit every flag change.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: percentage rollout, cohort targeting, version targeting, audit trail, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Create a feature-flag service for mobile apps. Product can target by % rollout, user cohort, and app version. Clients poll every 5 minutes; audit every flag change.\n- The system shall cover checklist topics: percentage rollout, cohort targeting, version targeting, audit trail, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'percentage rollout', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'cohort targeting', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'version targeting', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'audit trail', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "percentage rollout",
+      "cohort targeting",
+      "version targeting",
+      "audit trail",
+      "acceptance criteria"
+    ],
+    "split": "val"
+  },
+  {
+    "id": "brg_17",
+    "brief": "Add a returns portal for ecommerce. Customers select order items, print prepaid labels, track RMA status, and get refunds within 5 business days of warehouse receipt.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: item selection returns, prepaid labels, RMA tracking, 5-day refunds, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Add a returns portal for ecommerce. Customers select order items, print prepaid labels, track RMA status, and get refunds within 5 business days of warehouse receipt.\n- The system shall cover checklist topics: item selection returns, prepaid labels, RMA tracking, 5-day refunds, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'item selection returns', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'prepaid labels', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'RMA tracking', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising '5-day refunds', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "item selection returns",
+      "prepaid labels",
+      "RMA tracking",
+      "5-day refunds",
+      "acceptance criteria"
+    ],
+    "split": "val"
+  },
+  {
+    "id": "brg_18",
+    "brief": "Build internal knowledge-base search with RAG. Employees query SOP docs; answers cite source pages; admins reindex weekly; PII in docs must be redacted from answers.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: RAG search, source citations, weekly reindex, PII redaction, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Build internal knowledge-base search with RAG. Employees query SOP docs; answers cite source pages; admins reindex weekly; PII in docs must be redacted from answers.\n- The system shall cover checklist topics: RAG search, source citations, weekly reindex, PII redaction, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'RAG search', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'source citations', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'weekly reindex', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'PII redaction', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "RAG search",
+      "source citations",
+      "weekly reindex",
+      "PII redaction",
+      "acceptance criteria"
+    ],
+    "split": "val"
+  },
+  {
+    "id": "brg_19",
+    "brief": "We need shift scheduling for a call center. Planners assign agents to shifts respecting skills and labor law rest rules; agents swap shifts with approval; publish schedules 2 weeks ahead.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: skill-based scheduling, rest rule compliance, shift swaps approval, 2-week publish, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: We need shift scheduling for a call center. Planners assign agents to shifts respecting skills and labor law rest rules; agents swap shifts with approval; publish schedules 2 weeks ahead.\n- The system shall cover checklist topics: skill-based scheduling, rest rule compliance, shift swaps approval, 2-week publish, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'skill-based scheduling', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'rest rule compliance', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'shift swaps approval', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising '2-week publish', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "skill-based scheduling",
+      "rest rule compliance",
+      "shift swaps approval",
+      "2-week publish",
+      "acceptance criteria"
+    ],
+    "split": "test"
+  },
+  {
+    "id": "brg_20",
+    "brief": "Create a contract renewal tracker. Pull end dates from Salesforce, alert owners 90/60/30 days out, capture renewal decision, and escalate overdue renewals to VP Sales.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: Salesforce end dates, 90 60 30 alerts, renewal decision capture, escalation, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Create a contract renewal tracker. Pull end dates from Salesforce, alert owners 90/60/30 days out, capture renewal decision, and escalate overdue renewals to VP Sales.\n- The system shall cover checklist topics: Salesforce end dates, 90 60 30 alerts, renewal decision capture, escalation, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'Salesforce end dates', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising '90 60 30 alerts', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'renewal decision capture', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'escalation', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "Salesforce end dates",
+      "90 60 30 alerts",
+      "renewal decision capture",
+      "escalation",
+      "acceptance criteria"
+    ],
+    "split": "test"
+  },
+  {
+    "id": "brg_21",
+    "brief": "Add offline mode for our field inspection app. Inspectors capture photos and forms without network, sync when online with conflict resolution preferring latest server timestamp.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: offline capture, photo forms sync, conflict resolution, field inspection, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Add offline mode for our field inspection app. Inspectors capture photos and forms without network, sync when online with conflict resolution preferring latest server timestamp.\n- The system shall cover checklist topics: offline capture, photo forms sync, conflict resolution, field inspection, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'offline capture', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'photo forms sync', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'conflict resolution', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'field inspection', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "offline capture",
+      "photo forms sync",
+      "conflict resolution",
+      "field inspection",
+      "acceptance criteria"
+    ],
+    "split": "test"
+  },
+  {
+    "id": "brg_22",
+    "brief": "Build a marketing email preference center. Users manage topic subscriptions, frequency caps, and global unsubscribe. Changes propagate to Braze within 15 minutes.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: topic preferences, frequency caps, global unsubscribe, Braze sync 15 min, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Build a marketing email preference center. Users manage topic subscriptions, frequency caps, and global unsubscribe. Changes propagate to Braze within 15 minutes.\n- The system shall cover checklist topics: topic preferences, frequency caps, global unsubscribe, Braze sync 15 min, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'topic preferences', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'frequency caps', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'global unsubscribe', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'Braze sync 15 min', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "topic preferences",
+      "frequency caps",
+      "global unsubscribe",
+      "Braze sync 15 min",
+      "acceptance criteria"
+    ],
+    "split": "test"
+  },
+  {
+    "id": "brg_23",
+    "brief": "Implement fraud-review queue for payments over $500. Flag high-risk scores, analysts approve/decline with reason codes, and declined users get templated emails.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: high-risk flagging, analyst review queue, reason codes, decline emails, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Implement fraud-review queue for payments over $500. Flag high-risk scores, analysts approve/decline with reason codes, and declined users get templated emails.\n- The system shall cover checklist topics: high-risk flagging, analyst review queue, reason codes, decline emails, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'high-risk flagging', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'analyst review queue', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'reason codes', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'decline emails', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "high-risk flagging",
+      "analyst review queue",
+      "reason codes",
+      "decline emails",
+      "acceptance criteria"
+    ],
+    "split": "test"
+  },
+  {
+    "id": "brg_24",
+    "brief": "Create a classroom waitlist for university registration. When a seat opens, notify the next student via email/SMS with a 12-hour claim window before offering to the next.",
+    "gold_requirements": "## User Stories\n- As a stakeholder, I want the system to address: waitlist ordering, seat open notification, 12-hour claim window, email SMS, so that the brief is fully delivered.\n\n## Functional Requirements\n- The system shall implement capabilities described in: Create a classroom waitlist for university registration. When a seat opens, notify the next student via email/SMS with a 12-hour claim window before offering to the next.\n- The system shall cover checklist topics: waitlist ordering, seat open notification, 12-hour claim window, email SMS, acceptance criteria\n\n## Non-Functional Requirements\n- The solution shall be usable by intended roles with clear status feedback.\n- Critical flows shall include auditability where sensitive actions occur.\n\n## Acceptance Criteria\n- Given a valid user, when exercising 'waitlist ordering', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'seat open notification', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising '12-hour claim window', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'email SMS', then the expected outcome is observable and verifiable.\n- Given a valid user, when exercising 'acceptance criteria', then the expected outcome is observable and verifiable.",
+    "checklist": [
+      "waitlist ordering",
+      "seat open notification",
+      "12-hour claim window",
+      "email SMS",
+      "acceptance criteria"
+    ],
+    "split": "test"
+  }
+]

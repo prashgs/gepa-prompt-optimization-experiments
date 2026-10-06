@@ -1,0 +1,52 @@
+{
+  // Ollama connection
+  "ollama_base_url": "http://localhost:11434",
+
+  // Model tags (CLI overrides: --task-model, --reflection-model, --judge-model, --small-model, --large-model)
+  // GEPA optimizes small and large separately; each uses its reflection_* LM for prompt mutation.
+  "models": {
+    "small": "gemma4:e4b",
+    "large": "qwen3.5:9b",
+    "task": "qwen3.5:4b",
+    "reflection": "qwen3.5:4b",
+    "reflection_small": "gemma4:e4b",
+    "reflection_large": "qwen3.5:9b",
+    "judge": "gemma4:12b"
+  },
+
+  // LLM sampling hyperparameters
+  "llm": {
+    "temperature": 2,
+    "judge_temperature": 0.0,
+    // "max_tokens": 4096,
+    // Qwen3.5 thinking models return empty content through LiteLLM unless disabled
+    "disable_thinking": true
+  },
+
+  // GEPA optimization budget and strategy
+  "gepa": {
+    "max_metric_calls": 30,
+    "candidate_selection_strategy": "pareto",
+    "display_progress_bar": true,
+    // Judge seed (baseline) and mutated prompts during GEPA, not only at final evaluate
+    "use_judge": true,
+    "checklist_weight": 0.3
+  },
+
+  // MLflow tracking
+  "mlflow": {
+    // MLflow 3.x prefers a DB backend; file stores need MLFLOW_ALLOW_FILE_STORE=true
+    "tracking_uri": "sqlite:///mlflow.db",
+    "experiment_name": "brg-gepa-qwen"
+  },
+
+  // Paths (relative to project root)
+  "paths": {
+    "dataset": "data/brg_synthetic.json",
+    "generator_crew": "config/generator",
+    "judge_crew": "config/judge",
+    "artifacts_dir": "artifacts",
+    // Per-run dirs with scores, prompts, final prompt, progress.log
+    "outputs_dir": "outputs"
+  }
+}
